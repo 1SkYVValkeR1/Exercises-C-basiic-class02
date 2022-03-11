@@ -1,24 +1,31 @@
 ﻿using System;
 
-namespace HomeWork.Class02.Exercise02
+namespace HomeWork.Class02.Exercise03
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Average Number");
+            Console.WriteLine("SwapNumbers");
 
-            int firstNumber = 10;
-            int secondNumber = 15;
-            int thirdNumber = 20;
-            int fourNumber = 30;
+            int firstNumber = 8;
+            int secondNumber = 5;
+            int temp;
 
-            int calculate = firstNumber + secondNumber + thirdNumber + fourNumber;
-            int average = calculate / 4;
-            Console.WriteLine("The average of 10, 15, 20, 30 is:" + average);
-        }
-    }
-}
+            Console.WriteLine("please enter the firstNumber");
+            firstNumber = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("please enter the secondNumber");
+            secondNumber = Convert.ToInt32(Console.ReadLine());
+
+
+            temp = firstNumber;
+            firstNumber = secondNumber;
+            secondNumber = temp;
+
+            Console.WriteLine("Values are swapping are:" );
+            Console.WriteLine("firstNumber="+firstNumber);
+            Console.WriteLine("secondNumber="+secondNumber);
+            
         }
     }
 }
